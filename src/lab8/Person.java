@@ -4,6 +4,7 @@ public class Person {
     //class properties
     private  String pID;
     private  String name;
+    private String yearBorn;
     //constructor
 
     public Person(String pID, String name) {
@@ -11,6 +12,15 @@ public class Person {
         this.name = name;
     }
 
+    public Person(String pID, String name, String yearBorn) {
+        this.pID = pID;
+        this.name = name;
+        this.yearBorn = yearBorn;
+    }
+    public void introduce(){
+        System.out.println("My name is"+this.name+",");
+        System.out.println("I was born"+this.yearBorn+".");
+    }
 
     //toString
 
@@ -25,6 +35,14 @@ public class Person {
 
     //getter and setter
 
+
+    public String getYearBorn() {
+        return yearBorn;
+    }
+
+    public void setYearBorn(String yearBorn) {
+        this.yearBorn = yearBorn;
+    }
 
     public String getpID() {
         return pID;
@@ -41,4 +59,5 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
 }//class
