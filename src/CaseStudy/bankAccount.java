@@ -28,6 +28,6 @@ public class bankAccount {
         this.balance -= amount;
     }
     public String getInfo(){
-        return "[Customer Name: "+this.cus.getName()+"" + "Bank ID :"+this.id+""+"Balance :"+this.balance+"]";
+        return "[Customer Name: "+this.cus.getName()+" " + "Bank ID :"+this.id+""+"Balance :"+this.balance+"]";
     }
 }//class

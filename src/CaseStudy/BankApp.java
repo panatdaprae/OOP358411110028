@@ -7,7 +7,15 @@ public class BankApp {
         cus1.setName("Panatda Sriphanoen");
 
         //object bankAccount
-        bankAccount acc = new bankAccount("11-110-110-110")
+        bankAccount acc = new bankAccount("11-110-110-110",500.00,cus1);
+
+        System.out.println(acc.getInfo());
+        acc.doposit(2000.00);
+        System.out.println(acc.getInfo());
+
+        acc.withdraw(1000.00);
+        System.out.println(acc.getInfo());
+
     }
 
 }//class
